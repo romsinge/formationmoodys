@@ -1,6 +1,10 @@
-<amb-product
-  (details)="handleProductDetails($event)"
-  [product]="product"
-  *ngFor="let product of products"
-  ambHighlight="grey"
-></amb-product>
+<mat-toolbar>Bienvenue chez {{ title }}</mat-toolbar>
+
+<mat-card>
+  <amb-product
+    (details)="handleProductDetails($event)"
+    [product]="product"
+    *ngFor="let product of products"
+    ambHighlight="grey"
+  ></amb-product>
+</mat-card>
