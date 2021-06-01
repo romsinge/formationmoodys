@@ -1,0 +1,15 @@
+img {
+  width: 200px;
+}
+
+img.zoom {
+  transform: scale(2);
+}
+
+:host {
+  display: inline-block;
+  width: 200px;
+  margin: 40px;
+  padding: 20px;
+  vertical-align: top;
+}
