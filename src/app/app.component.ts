@@ -8,9 +8,14 @@ import { Product } from './interfaces/product.interface';
 })
 export class AppComponent {
   title = 'formationangular3';
+  searchString: string = 't-shirt'
 
   handleProductDetails(product: Product) {
     console.log('PRODUIT :', product)
+  }
+
+  getProducts() {
+    return JSON.stringify(this.products)
   }
 
   products: Product[] = [

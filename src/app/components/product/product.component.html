@@ -1,5 +1,5 @@
 <h3>{{ product.title }}</h3>
-<h4>{{ product.price }}</h4>
+<h4>{{ product.price | vat | currency:'EUR' }}</h4>
 <img
   [src]="product.image"
   (mouseover)="toggleMouseover()"

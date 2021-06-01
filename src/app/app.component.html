@@ -4,7 +4,14 @@
   <amb-product
     (details)="handleProductDetails($event)"
     [product]="product"
-    *ngFor="let product of products"
+    *ngFor="let product of products | search:searchString"
     ambHighlight="grey"
   ></amb-product>
 </mat-card>
+
+<!-- <pre>
+  {{ getProducts() }}
+</pre>
+<pre>
+  {{ products | json }}
+</pre> -->

@@ -6,12 +6,16 @@ import { ProductComponent } from './components/product/product.component';
 import { HighlightDirective } from './directives/highlight.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './modules/material/material.module';
+import { VatPipe } from './pipes/vat.pipe';
+import { SearchPipe } from './pipes/search.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
-    HighlightDirective
+    HighlightDirective,
+    VatPipe,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
